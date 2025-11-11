@@ -4,6 +4,7 @@ import time
 from urllib.parse import quote
 from bs4 import BeautifulSoup
 from threading import Thread
+import os
 
 app = Flask(__name__)
 logs = []
@@ -98,5 +99,6 @@ def logs_page():
     return render_template("logs.html", logs=logs)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
 
