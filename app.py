@@ -8,6 +8,7 @@ import os
 
 app = Flask(__name__)
 logs = []
+app.secret_key = os.environ.get("SECRET_KEY")
 
 # --- URLs ---
 login_url = "https://www.educazionedigitale.it/php-custom/login/ajax/check-login.php"
