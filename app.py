@@ -76,9 +76,9 @@ def start_lesson_completion(username, password):
                 "Cookie": cookie_value
             }
             resp = s.post(lezione_url, params=params, headers=headers, data=data)
-            append_log(f"[{d} | Lesson {n}] {resp.status_code} | {resp.text.strip()[:100]} ...")
+            append_log(f"[{d} | Lezione {n}] {resp.status_code} | {resp.text.strip()[:100]} ...")
             time.sleep(0.5)
-    append_log("[+] All lessons completed!")
+    append_log("[+] LEZIONI COMPLETATE!!!")
 
 @app.route("/", methods=["GET", "POST"])
 def index():
