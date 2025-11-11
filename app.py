@@ -6,9 +6,7 @@ from bs4 import BeautifulSoup
 from threading import Thread
 
 app = Flask(__name__)
-app.secret_key = "supersecretkey"  # for sessions, replace with env var in production
-
-logs = []  # global logs
+logs = []
 
 # --- URLs ---
 login_url = "https://www.educazionedigitale.it/php-custom/login/ajax/check-login.php"
