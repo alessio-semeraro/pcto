@@ -15,7 +15,7 @@ login_url = "https://www.educazionedigitale.it/php-custom/login/ajax/check-login
 lezione_url = "https://www.educazionedigitale.it/php-custom/pcto/pcto-set-lezione-incorso.php"
 accept_url = "https://www.educazionedigitale.it/php-custom/login/ajax/check-login-acceptance.php?directory="
 
-dirs = ["versoillavoroconlesoftskills"]
+dirs = ["lascienzadelvoloverticale"]
 
 def append_log(msg):
     logs.append(msg)
