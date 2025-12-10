@@ -62,9 +62,9 @@ def start_lesson_completion(username, password):
     for d in dirs:
         append_log(f"\n[+] Checking lessons in directory: {d}")
         params = {"directory": d}
-        for n in range(1, 51):
+        for n in range(1, 15):
             data = {
-                "id_file": "103393",
+                "id_file": "103285",
                 "id_l_svolgimento": str(n),
                 "time": quote("01:00:00", safe=''),
                 "stato_int": "0",
